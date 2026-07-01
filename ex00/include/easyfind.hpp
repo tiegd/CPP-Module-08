@@ -6,9 +6,11 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/01 15:34:40 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/07/01 15:36:01 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/07/01 15:50:02 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "easyfind.tpp"
 
 template <typename T> int easyfind(T a, int b)
 {
