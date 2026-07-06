@@ -1,25 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   easyfind.hpp                                       :+:      :+:    :+:   */
+/*   MutantStack.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/01 15:34:40 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/07/03 14:39:49 by gaducurt         ###   ########.fr       */
+/*   Created: 2026/07/06 15:51:20 by gaducurt          #+#    #+#             */
+/*   Updated: 2026/07/06 16:11:16 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <algorithm>
-#include <iostream>
+#ifndef __MUTANTSTACK__
+#define __MUTANTSTACK__
 
-template <typename T>
-void easyfind(T a, int b)
+class MutantStack : 
 {
-    typename T::iterator it;
-    it = std::find(a.begin(), a.end(), b);
-    if (it != a.end())
-        std::cout << "The occurrence " << b << " has been found" << std::endl;
-    else
-		throw std::exception();
-}
+	private:
+		
+	public:
+		MutantStack();
+		MutantStack(const MutantStack &obj);
+		MutantStack &operator=(const MutantStack &obj);
+		~MutantStack();
+		
+		
+};
+
+#endif
