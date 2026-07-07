@@ -1,4 +1,4 @@
-NAME = span
+NAME = mutantStack
 
 CXX = c++
 

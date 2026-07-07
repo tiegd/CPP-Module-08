@@ -6,7 +6,62 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/06 15:51:39 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/07/06 15:51:40 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/07/07 17:15:45 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <iostream>
+#include "MutantStack.hpp"
+
+#include <list>
+
+int main()
+{
+	std::cout << "Exemple with MutantStack :" << std::endl;
+	MutantStack<int> mstack;
+	mstack.push(5);
+	mstack.push(17);
+	std::cout << "top = " << mstack.top() << std::endl;
+	mstack.pop();
+	std::cout << "size = " << mstack.size() << std::endl;
+	mstack.push(3);
+	mstack.push(5);
+	mstack.push(737);
+	//[...]
+	mstack.push(0);
+	MutantStack<int>::iterator it = mstack.begin();
+	MutantStack<int>::iterator ite = mstack.end();
+	++it;
+	--it;
+	while (it != ite)
+	{
+	    std::cout << *it << std::endl;
+	    ++it;
+	}
+	std::stack<int> s(mstack);
+	
+	/*------------------------------------------------------------------------*/
+
+	std::cout << "\nExemple with std::list :" << std::endl;
+	std::list<int> lst;
+	lst.push_back(5);
+	lst.push_back(17);
+	std::cout << "top = " << lst.back() << std::endl;
+	lst.pop_front();
+	std::cout << "size = " << lst.size() << std::endl;
+	lst.push_back(3);
+	lst.push_back(5);
+	lst.push_back(737);
+	lst.push_back(0);
+	std::list<int>::iterator it_l = lst.begin();
+	std::list<int>::iterator ite_l = lst.end();
+	++it_l;
+	--it_l;
+	while (it_l != ite_l)
+	{
+		std::cout << *it_l << std::endl;
+		++it_l;
+	}
+	std::list<int> l(lst);
+	return 0;
+}
