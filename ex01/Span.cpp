@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/03 14:41:01 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/07/06 16:39:14 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/07/07 16:28:50 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,26 +67,18 @@ int	Span::longestSpan()
 	return (_max);
 }
 
-// void	Span::multiAdd(int n)
-// {
-// 	srand(time(NULL));
-// 	for (int i = 0; i < n; i++)
-// 	{
-// 		const int	value = rand() % 20000;
-// 		addNumber(value);
-// 	}
-// }
-
 void	Span::insert(int* array, int begin, int end)
 {
-	for (begin; begin < end; begin++)
-		addNumber(array[begin]);
+	for (int i = begin; i < end; i++)
+		addNumber(array[i]);
 }
 
 void	Span::display()
 {
-	std::list<int>::iterator it = _lst.begin();
-	for (it; it < _lst.size())
-	// for (int i = 0; i < _lst.size(); i++)
-	// 	std::cout << _lst[i] << ", ";
+	std::cout << "span = [ ";
+	for (std::list<int>::iterator it = _lst.begin(); it != _lst.end(); it++)
+	{
+		std::cout << (*it) << " ";
+	}
+	std::cout << "]" << std::endl;
 }

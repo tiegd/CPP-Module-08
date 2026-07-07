@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/03 14:40:42 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/07/06 16:31:41 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/07/07 16:20:52 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ class Span
 {
 	private:
 		std::list<int>	_lst;
-		// std::array<int>		array;
 		unsigned int	_limit;
 		int				_min;
 		int				_max;	
@@ -34,7 +33,6 @@ class Span
 		void	addNumber(int n);
 		int		shortestSpan();
 		int		longestSpan();
-		// void	multiAdd(int n);
 		void	insert(int* array, int begin, int end);
 		void	display();
 };

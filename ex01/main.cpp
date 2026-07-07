@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/03 14:40:52 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/07/06 16:20:35 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/07/07 16:28:40 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,14 @@
 int main()
 {
 	Span sp = Span(10000);
-	int	myarray[] = {10, 11, 12, 13, 14, 15};
+	int	myarray[] = {10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23};
 	try
 	{
-		sp.insert(myarray, 2, 4);
-		// sp.multiAdd(10000);
-		// sp.addNumber(6);
-		std::cout << sp.shortestSpan() << std::endl;
-		std::cout << sp.longestSpan() << std::endl;
+		sp.insert(myarray, 2, 7);
+		sp.addNumber(6);
+		sp.display();
+		std::cout << "shortest = " << sp.shortestSpan() << std::endl;
+		std::cout << "longest = " << sp.longestSpan() << std::endl;
 	}
 	catch (std::exception &e)
 	{
