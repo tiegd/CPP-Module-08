@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/03 14:41:01 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/07/11 14:58:42 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/07/11 15:01:37 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,11 +59,13 @@ void	Span::addNumber(int nb)
 
 int	Span::shortestSpan()
 {
+	//misunderstanding of subject
 	return (_min);
 }
 
 int	Span::longestSpan()
 {
+	//misunderstanding of subject
 	return (_max);
 }
 
