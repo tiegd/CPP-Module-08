@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/03 14:40:42 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/07/07 16:20:52 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/07/11 14:57:21 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,9 @@ class Span
 		void	addNumber(int n);
 		int		shortestSpan();
 		int		longestSpan();
-		void	insert(int* array, int begin, int end);
+		// void	insert(int* array, int begin, int end);
+		template <typename it>
+		void	insert(int* array, it begin, it end);
 		void	display();
 };
 

@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/03 14:41:01 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/07/11 12:34:11 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/07/11 14:58:42 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,11 +67,18 @@ int	Span::longestSpan()
 	return (_max);
 }
 
-void	Span::insert(int* array, int begin, int end)
+template <typename it>
+void	Span::insert(int* array, it begin, it end)
 {
-	for (int i = begin; i < end; i++)
-		addNumber(array[i]);
+
 }
+
+// void	Span::insert(int* array, int begin, int end)
+// {
+	
+// 	for (int i = begin; i < end; i++)
+// 		addNumber(array[i]);
+// }
 
 void	Span::display()
 {
